@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_nutrition_box"
+        android:name="com.example.hydrate.ui.nutrition_box.ItemFragmentNutritionBox"
+        android:label="@string/title_nutrition_box"
+        tools:layout="@layout/fragment_item_nutrition_box_list" >
+        <action
+            android:id="@+id/action_navigation_nutrition_box_to_settingsFragment2"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.hydrate.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_home_to_itemFragmentDrink2"
+            app:destination="@id/itemFragmentDrink2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_navigation_home_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <argument
+            android:name="drink_picked"
+            app:argType="string"
+            android:defaultValue="water" />
+        <argument
+            android:name="drink_size"
+            android:defaultValue="0"
+            app:argType="float" />
+        <argument
+            android:name="sugar_progress"
+            app:argType="float"
+            android:defaultValue="0" />
+        <argument
+            android:name="calories_progress"
+            app:argType="float"
+            android:defaultValue="0" />
+        <argument
+            android:name="alcohol_progress"
+            app:argType="float"
+            android:defaultValue="0" />
+        <argument
+            android:name="coffeine_progress"
+            app:argType="float"
+            android:defaultValue="0" />
+        <argument
+            android:name="magnesium_progress"
+            app:argType="float"
+            android:defaultValue="0" />
+        <argument
+            android:name="potassium_progress"
+            app:argType="float"
+            android:defaultValue="0" />
+        <argument
+            android:name="sodium_progress"
+            app:argType="float"
+            android:defaultValue="0" />
+        <argument
+            android:name="protein_progress"
+            app:argType="float"
+            android:defaultValue="0" />
+        <argument
+            android:name="calcium_progress"
+            app:argType="float"
+            android:defaultValue="0" />
+        <argument
+            android:name="vitamins_progress"
+            app:argType="float"
+            android:defaultValue="0" />
+        <argument
+            android:name="Progress"
+            app:argType="float"
+            android:defaultValue="0" />
+        <argument
+            android:name="CurrentDay"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="time"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.hydrate.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_profile_to_registrationActivity"
+            app:destination="@id/registrationActivity" />
+        <action
+            android:id="@+id/action_navigation_profile_to_settingsFragment2"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemFragmentDrink2"
+        android:name="com.example.hydrate.ui.drink.ItemFragmentDrink"
+        android:label="fragment_item_list_drink"
+        tools:layout="@layout/fragment_item_list_drink" >
+        <action
+            android:id="@+id/action_itemFragmentDrink2_to_navigation_home7"
+            app:destination="@id/navigation_home"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <argument
+            android:name="drink_picked"
+            app:argType="string"
+            android:defaultValue="water" />
+        <argument
+            android:name="drink_size"
+            android:defaultValue="0"
+            app:argType="float" />
+        <argument
+            android:name="sugar_progress"
+            app:argType="float"
+            android:defaultValue="0" />
+        <argument
+            android:name="calories_progress"
+            app:argType="float"
+            android:defaultValue="0" />
+        <argument
+            android:name="alcohol_progress"
+            app:argType="float"
+            android:defaultValue="0" />
+        <argument
+            android:name="coffeine_progress"
+            app:argType="float"
+            android:defaultValue="0" />
+        <argument
+            android:name="magnesium_progress"
+            app:argType="float"
+            android:defaultValue="0" />
+        <argument
+            android:name="potassium_progress"
+            app:argType="float"
+            android:defaultValue="0" />
+        <argument
+            android:name="sodium_progress"
+            app:argType="float"
+            android:defaultValue="0" />
+        <argument
+            android:name="protein_progress"
+            app:argType="float"
+            android:defaultValue="0" />
+        <argument
+            android:name="calcium_progress"
+            app:argType="float"
+            android:defaultValue="0" />
+        <argument
+            android:name="vitamins_progress"
+            app:argType="float"
+            android:defaultValue="0" />
+        <argument
+            android:name="Progress"
+            app:argType="float"
+            android:defaultValue="0" />
+        <argument
+            android:name="CurrentDay"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="time"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_itemFragmentDrink2_to_settingsFragment2"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/registrationActivity"
+        android:name="com.example.hydrate.activity.RegistrationActivity"
+        android:label="activity_registration"
+        tools:layout="@layout/activity_registration" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.hydrate.ui.settings.SettingsFragment"
+        android:label="SettingsFragment" >
+        <action
+            android:id="@+id/action_settingsFragment_to_mainActivity2"
+            app:destination="@id/mainActivity2" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity2"
+        android:name="com.example.hydrate.activity.MainActivity"
+        android:label="MainActivity" />
+
+</navigation>

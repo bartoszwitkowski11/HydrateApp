@@ -1,0 +1,63 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:persistent="true"
+        app:title="Notifications">
+
+        <SwitchPreferenceCompat
+            android:icon="@drawable/ic_outline_notifications_24"
+            android:summary="Notifications are off between 22:00 and 8:00"
+            app:defaultValue="false"
+            app:key="notificationsOnOff"
+            app:title="Notifications" />
+
+        <SeekBarPreference
+            android:defaultValue="60"
+            android:max="240"
+            android:summary="(in minutes)"
+            app:key="notificationsIntensitySeekBar"
+            app:showSeekBarValue="true"
+            app:title="Interval between notifications:" />
+
+        <Preference
+            android:icon="@drawable/ic_outline_save_24"
+            android:key="saveNotificationsButton"
+            android:summary="Click to save your notifications settings"
+            android:title="Save settings" />
+        <PreferenceScreen android:summary="DISCLAIMER: To turn off notifications between 22:00 and 8:00 you have to launch the app after 22:00 then notifications turns off."></PreferenceScreen>
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:persistent="true"
+        android:title="Set custom cup sizes">
+
+        <EditTextPreference
+            android:defaultValue="200"
+            android:dialogTitle="Set small cup size (in ml)"
+            android:icon="@drawable/ic_outline_local_drink_24"
+            android:key="cup_one"
+            android:summary="Default value: 200 ml"
+            android:title="Small cup size" />
+
+        <EditTextPreference
+            android:defaultValue="350"
+            android:dialogTitle="Set medium cup size (in ml)"
+            android:icon="@drawable/ic_outline_local_drink_24"
+            android:key="cup_two"
+            android:summary="Default value: 350 ml"
+            android:title="Medium cup size" />
+
+        <EditTextPreference
+            android:defaultValue="500"
+            android:dialogTitle="Set big cup size (in ml)"
+            android:icon="@drawable/ic_outline_local_drink_24"
+            android:key="cup_three"
+            android:summary="Default value: 500 ml"
+            android:title="Big cup size" />
+
+    </PreferenceCategory>
+
+    <PreferenceScreen android:summary=" "></PreferenceScreen>
+
+</PreferenceScreen>

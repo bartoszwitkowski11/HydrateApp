@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <ImageButton
+        android:id="@+id/refresh_button"
+        android:layout_width="55dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_corners"
+        android:src="@drawable/ic_refresh_black"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="131dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/layer_list"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_profile_person_24" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Your name"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/nav_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="2dp"
+                android:text="Your goal (ml):"
+                app:layout_constraintEnd_toStartOf="@+id/user_goal"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout9" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="2dp"
+                android:text="Weight (kg):"
+                app:layout_constraintEnd_toStartOf="@+id/user_weight"
+                app:layout_constraintHorizontal_bias="0.262"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout10" />
+
+            <Button
+                android:id="@+id/logoutButton"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/orange_400"
+                android:text="Log out"
+                app:cornerRadius="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioChange" />
+
+            <TextView
+                android:id="@+id/user_goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="4dp"
+                android:text="TextView"
+                app:layout_constraintStart_toEndOf="@+id/textView9"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout9" />
+
+            <TextView
+                android:id="@+id/user_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="4dp"
+                android:text="TextView"
+                app:layout_constraintStart_toEndOf="@+id/textView10"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout10" />
+
+            <TextView
+                android:id="@+id/user_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="4dp"
+                android:text="TextView"
+                app:layout_constraintStart_toEndOf="@+id/textView11"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout11" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="2dp"
+                android:text="Height (cm):"
+                app:layout_constraintEnd_toStartOf="@+id/user_height"
+                app:layout_constraintHorizontal_bias="0.268"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout11" />
+
+            <TextView
+                android:id="@+id/user_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="4dp"
+                android:text="TextView"
+                app:layout_constraintStart_toEndOf="@+id/textView12"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout12" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="2dp"
+                android:text="Gender:"
+                app:layout_constraintEnd_toStartOf="@+id/user_gender"
+                app:layout_constraintHorizontal_bias="0.237"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout12" />
+
+            <ImageButton
+                android:id="@+id/save_goal"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_corners"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:hapticFeedbackEnabled="true"
+                android:src="@android:drawable/ic_menu_save"
+                app:layout_constraintBottom_toBottomOf="@+id/textInputLayout10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textInputLayout10"
+                app:layout_constraintTop_toTopOf="@+id/textInputLayout10"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageButton
+                android:id="@+id/save_weight"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_corners"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:hapticFeedbackEnabled="true"
+                android:src="@android:drawable/ic_menu_save"
+                app:layout_constraintBottom_toBottomOf="@+id/textInputLayout11"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textInputLayout11"
+                app:layout_constraintTop_toTopOf="@+id/textInputLayout11"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageButton
+                android:id="@+id/save_height"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_corners"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:hapticFeedbackEnabled="true"
+                android:src="@android:drawable/ic_menu_save"
+                app:layout_constraintBottom_toBottomOf="@+id/textInputLayout12"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textInputLayout12"
+                app:layout_constraintTop_toTopOf="@+id/textInputLayout12"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageButton
+                android:id="@+id/save_gender"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_corners"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:hapticFeedbackEnabled="true"
+                android:src="@android:drawable/ic_menu_save"
+                app:layout_constraintBottom_toBottomOf="@+id/radioChange"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/radioChange" />
+
+
+            <ImageButton
+                android:id="@+id/save_name"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_corners"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:hapticFeedbackEnabled="true"
+                android:src="@android:drawable/ic_menu_save"
+                app:layout_constraintBottom_toBottomOf="@+id/textInputLayout9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textInputLayout9"
+                app:layout_constraintTop_toTopOf="@+id/textInputLayout9"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout9"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="4dp"
+                android:textColorHint="@color/black"
+                app:boxBackgroundColor="@color/orange_50"
+                app:boxCornerRadiusBottomEnd="4dp"
+                app:boxCornerRadiusBottomStart="4dp"
+                app:boxCornerRadiusTopEnd="32dp"
+                app:boxCornerRadiusTopStart="32dp"
+                app:boxStrokeColor="@color/orange_400"
+                app:endIconTint="@color/orange_400"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="true"
+                app:hintTextColor="@color/orange_400"
+                app:layout_constraintEnd_toStartOf="@+id/save_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/changeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Change your name"
+                    android:inputType="text"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout10"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:textColorHint="@color/black"
+                app:boxBackgroundColor="@color/orange_50"
+                app:boxCornerRadiusBottomEnd="4dp"
+                app:boxCornerRadiusBottomStart="4dp"
+                app:boxCornerRadiusTopEnd="4dp"
+                app:boxCornerRadiusTopStart="4dp"
+                app:boxStrokeColor="@color/orange_400"
+                app:endIconTint="@color/orange_400"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="true"
+                app:hintTextColor="@color/orange_400"
+                app:layout_constraintEnd_toStartOf="@+id/save_goal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/user_goal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/changeGoal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Change your goal"
+                    android:numeric="decimal"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout11"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:textColorHint="@color/black"
+                app:boxBackgroundColor="@color/orange_50"
+                app:boxCornerRadiusBottomEnd="4dp"
+                app:boxCornerRadiusBottomStart="4dp"
+                app:boxCornerRadiusTopEnd="4dp"
+                app:boxCornerRadiusTopStart="4dp"
+                app:boxStrokeColor="@color/orange_400"
+                app:endIconTint="@color/orange_400"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="true"
+                app:hintTextColor="@color/orange_400"
+                app:layout_constraintEnd_toStartOf="@+id/save_weight"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/user_weight">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/changeWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Change your weight"
+                    android:numeric="decimal"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout12"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:textColorHint="@color/black"
+                app:boxBackgroundColor="@color/orange_50"
+                app:boxCornerRadiusBottomEnd="32dp"
+                app:boxCornerRadiusBottomStart="32dp"
+                app:boxStrokeColor="@color/orange_400"
+                app:endIconTint="@color/orange_400"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="true"
+                app:hintTextColor="@color/orange_400"
+                app:layout_constraintEnd_toStartOf="@+id/save_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/user_height">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/changeHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Change your height"
+                    android:numeric="decimal"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RadioGroup
+                android:id="@+id/radioChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/user_gender">
+
+                <RadioButton
+                    android:id="@+id/toMaleButton"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/toFemaleButton"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Female" />
+            </RadioGroup>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.26"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

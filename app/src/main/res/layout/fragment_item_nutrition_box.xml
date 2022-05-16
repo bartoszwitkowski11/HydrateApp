@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools='http://schemas.android.com/tools'
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="#B13636"
+    app:cardBackgroundColor="@color/blue_100"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp"
+    app:contentPadding="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/drinkLayout"
+        android:layout_width="match_parent"
+        android:layout_height="213dp"
+        app:layout_constraintBottom_toBottomOf="@+id/drink_sodium"
+        app:layout_constraintTop_toBottomOf="@+id/drink_sodium">
+
+        <TextView
+            android:id="@+id/drink_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Name"
+            android:textAlignment="center"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/cardview_dark_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/drink_name" />
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2"
+            app:srcCompat="@drawable/ic_baseline_local_drink" />
+
+        <TextView
+            android:id="@+id/drink_calories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:text="Calories:"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/drink_sugar"
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <TextView
+            android:id="@+id/drink_sugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="Sugar:"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/drink_alcohol"
+            app:layout_constraintTop_toBottomOf="@+id/drink_calories"
+            tools:layout_editor_absoluteX="132dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline4" />
+
+        <TextView
+            android:id="@+id/drink_alcohol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="Alcohol:"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/drink_caffeine"
+            app:layout_constraintTop_toBottomOf="@+id/drink_sugar"
+            tools:layout_editor_absoluteX="132dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline4" />
+
+        <TextView
+            android:id="@+id/drink_caffeine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="Caffeine:"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/drink_magnesium"
+            app:layout_constraintTop_toBottomOf="@+id/drink_alcohol"
+            tools:layout_editor_absoluteX="132dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline4" />
+
+        <TextView
+            android:id="@+id/drink_magnesium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:text="Magnesium:"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/drink_caffeine"
+            tools:layout_editor_absoluteX="132dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline4" />
+
+        <TextView
+            android:id="@+id/drink_potassium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:text="Potassium:"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/drink_sodium"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <TextView
+            android:id="@+id/drink_sodium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="Sodium:"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/drink_protein"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/drink_potassium" />
+
+        <TextView
+            android:id="@+id/drink_protein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="Protein:"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/drink_calcium"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/drink_sodium" />
+
+        <TextView
+            android:id="@+id/drink_calcium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="Calcium:"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/drink_vitamins"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/drink_protein" />
+
+        <TextView
+            android:id="@+id/drink_vitamins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:text="Vitamins:"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/drink_calcium" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.62" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

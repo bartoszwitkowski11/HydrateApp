@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Hydrate</string>
+    <string name="title_home">Home</string>
+    <string name="title_nutrition_box">Nutrition Box</string>
+    <string name="title_settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_profile">Profile</string>
+    <string name="enter_your_drink_size_in_ml">Enter your drink size (in ml)</string>
+    <string name="slash">/</string>
+    <string name="progress_text">0 ml</string>
+    <string name="goal_text">0 ml</string>
+    <string name="percentage_text">0%</string>
+    <string name="your_liquids_consist_of">Your liquids consist of:</string>
+    <string name="vitamins_counter_text">0 mg</string>
+    <string name="calcium_counter_text">0 mg</string>
+    <string name="textview">TextView</string>
+    <string name="caffeine_counter_text">0 mg</string>
+    <string name="protein_counter_text">0 mg</string>
+    <string name="alcohol_counter_text">0 ml</string>
+    <string name="sodium_counter_text">0 mg</string>
+    <string name="sugar_counter_text">0 mg</string>
+    <string name="calories_counter_text">0 kcal</string>
+    <string name="magnesium_counter_text">0 mg</string>
+    <string name="potassium_counter_text">0 mg</string>
+</resources>

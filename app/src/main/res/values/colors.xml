@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_50">#e2f6ff</color>
+    <color name="blue_100">#b4e7ff</color>
+    <color name="blue_200">#83d7ff</color>
+    <color name="blue_300">#51c7fd</color>
+    <color name="blue_400">#2BBBFD</color> //main!!!
+
+    <color name="orange_50">#fce8e5</color>
+    <color name="orange_100">#ffcbb6</color>
+    <color name="orange_200">#ffa986</color>
+    <color name="orange_300">#fe8854</color> //secondary!!!
+    <color name="orange_400">#fd6e2b</color>
+    <color name="orange_500">#fc5500</color>
+    <color name="orange_600">#f14f00</color>
+    <color name="orange_700">#e44800</color>
+
+    <color name="cyan_50">#d9fff7</color>
+    <color name="cyan_100">#9dfee7</color>
+    <color name="cyan_200">#2bfdd7</color>
+    <color name="cyan_300">#00f7c5</color>
+    <color name="dark_blue_500">#2b52fd</color>
+    <color name="purple_300">#a174ff</color>
+    <color name="pink_200">#fa7cd0</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

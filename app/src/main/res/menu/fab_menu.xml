@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/smallDrink"
+        android:icon="@drawable/ic_baseline_local_drink"
+        android:title="Small drink size" />
+    <item
+        android:id="@+id/mediumDrink"
+        android:icon="@drawable/ic_baseline_local_drink"
+        android:title="Medium drink size" />
+    <item
+        android:id="@+id/bigDrink"
+        android:icon="@drawable/ic_baseline_local_drink"
+        android:title="Big drink size" />
+    <item
+        android:id="@+id/Other"
+        android:icon="@drawable/ic_baseline_local_drink"
+        android:title="Pick custom size drink" />
+</menu>
