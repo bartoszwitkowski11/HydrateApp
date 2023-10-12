@@ -6,5 +6,5 @@ Core idea behind the app is measuring how many liquids user have drunk during th
 
 Screenshots presents homescreen (1 and 2), Nutrition Box screen with nutrients from every added drink (3) and settings (4).
 
-<br><center><img src="Screenshots/1.jpg" width="207" height="414"> <img src="Screenshots/2.jpg" width="207" height="414"></center>
-<br><center><img src="Screenshots/3.jpg" width="207" height="414"> <img src="Screenshots/4.jpg" width="207" height="414"></center>
+<div align="center"><img src="Screenshots/1.jpg" width="207" height="414"> <img src="Screenshots/2.jpg" width="207" height="414"></div>
+<div align="center"><img src="Screenshots/3.jpg" width="207" height="414"> <img src="Screenshots/4.jpg" width="207" height="414"></div>
