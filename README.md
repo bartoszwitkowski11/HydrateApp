@@ -4,5 +4,6 @@ This is an app that I made for University as a final project for mobile terminal
 
 Core idea behind the app is measuring how many liquids user have drunk during the day. User input different liquids that were created in Firebase Realtime Database. Usage of firebase was one of a requirements from instructor. User is able to input drinks with different capacity. Every drink has defined its own nutrients. Before using the app user have to create simple and secure account, which uses Firebase Authentication. After that user can setup a goal of how many liquids they wanna to drink every day.
 
-<img src="Screenshots/1.jpg" width="207" height="414"> <img src="Screenshots/2.jpg" width="207" height="414"> <img src="Screenshots/3.jpg" width="207" height="414">
-<img src="Screenshots/4.jpg" width="207" height="414">
+Screenshots presents homescreen (1 and 2), Nutrition Box screen with nutrients from every added drink (3) and settings (4).
+
+<img src="Screenshots/1.jpg" width="207" height="414"> <img src="Screenshots/2.jpg" width="207" height="414"> <img src="Screenshots/3.jpg" width="207" height="414"> <img src="Screenshots/4.jpg" width="207" height="414">
